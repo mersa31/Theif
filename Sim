@@ -1,27 +1,3 @@
-
-Luazifier = {} 
-setmetatable(Luazifier, {__metatable = "Don' t touch my table P-Pervert!"})
-
--- Instances:
-Luazifier.ScreenGui1 = Instance.new("ScreenGui", game:GetService("CoreGui"))
-Luazifier.Frame1 = Instance.new("Frame", Luazifier.ScreenGui1)
-Luazifier.ImageLabel1 = Instance.new("ImageLabel", Luazifier.Frame1)
-Luazifier.Frame2 = Instance.new("Frame", Luazifier.Frame1)
-Luazifier.TextLabel1 = Instance.new("TextLabel", Luazifier.Frame2)
-Luazifier.Frame3 = Instance.new("Frame", Luazifier.Frame1)
-Luazifier.TextLabel2 = Instance.new("TextLabel", Luazifier.Frame3)
-
--- Properties:
-Luazifier.ScreenGui1.DisplayOrder = 0
-Luazifier.ScreenGui1.Enabled = true
-Luazifier.ScreenGui1.IgnoreGuiInset = false
-Luazifier.ScreenGui1.Name = "Support Ukraine"
-Luazifier.ScreenGui1.ResetOnSpawn = true
-Luazifier.ScreenGui1.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-Luazifier.ScreenGui1.Archivable = true
-Luazifier.ScreenGui1.AutoLocalize = true
-
-
 Luazifier.Frame1.Active = false
 Luazifier.Frame1.AnchorPoint = Vector2.new(0.5, 0.5)
 Luazifier.Frame1.BackgroundColor3 = Color3.new(1, 1, 1)
