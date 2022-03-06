@@ -1,3 +1,77 @@
+
+Luazifier = {} 
+setmetatable(Luazifier, {__metatable = "Don' t touch my table P-Pervert!"})
+
+-- Instances:
+Luazifier.ScreenGui1 = Instance.new("ScreenGui", game:GetService("CoreGui"))
+Luazifier.Frame1 = Instance.new("Frame", Luazifier.ScreenGui1)
+Luazifier.ImageLabel1 = Instance.new("ImageLabel", Luazifier.Frame1)
+Luazifier.Frame2 = Instance.new("Frame", Luazifier.Frame1)
+Luazifier.TextLabel1 = Instance.new("TextLabel", Luazifier.Frame2)
+Luazifier.Frame3 = Instance.new("Frame", Luazifier.Frame1)
+Luazifier.TextLabel2 = Instance.new("TextLabel", Luazifier.Frame3)
+
+-- Properties:
+Luazifier.ScreenGui1.DisplayOrder = 0
+Luazifier.ScreenGui1.Enabled = true
+Luazifier.ScreenGui1.IgnoreGuiInset = false
+Luazifier.ScreenGui1.Name = "Support Ukraine"
+Luazifier.ScreenGui1.ResetOnSpawn = true
+Luazifier.ScreenGui1.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Luazifier.ScreenGui1.Archivable = true
+Luazifier.ScreenGui1.AutoLocalize = true
+
+
+Luazifier.Frame1.Active = false
+Luazifier.Frame1.AnchorPoint = Vector2.new(0.5, 0.5)
+Luazifier.Frame1.BackgroundColor3 = Color3.new(1, 1, 1)
+Luazifier.Frame1.BackgroundTransparency = 1
+Luazifier.Frame1.BorderColor3 = Color3.new(0.105882, 0.164706, 0.207843)
+Luazifier.Frame1.BorderSizePixel = 1
+Luazifier.Frame1.LayoutOrder = 0
+Luazifier.Frame1.Name = "SupportFrame"
+Luazifier.Frame1.Position = UDim2.new(0.5, 0, 0.5, 0)
+Luazifier.Frame1.Rotation = 0
+Luazifier.Frame1.Selectable = false
+Luazifier.Frame1.Size = UDim2.new(0, 546, 0, 100)
+Luazifier.Frame1.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Luazifier.Frame1.Style = Enum.FrameStyle.Custom
+Luazifier.Frame1.Visible = true
+Luazifier.Frame1.ZIndex = 1
+Luazifier.Frame1.Archivable = true
+Luazifier.Frame1.ClipsDescendants = false
+Luazifier.Frame1.AutoLocalize = true
+
+
+Luazifier.ImageLabel1.Active = false
+Luazifier.ImageLabel1.AnchorPoint = Vector2.new(0, 0)
+Luazifier.ImageLabel1.BackgroundColor3 = Color3.new(1, 1, 1)
+Luazifier.ImageLabel1.BackgroundTransparency = 1
+Luazifier.ImageLabel1.BorderColor3 = Color3.new(0.105882, 0.164706, 0.207843)
+Luazifier.ImageLabel1.BorderSizePixel = 0
+Luazifier.ImageLabel1.LayoutOrder = 0
+Luazifier.ImageLabel1.Name = "Flag"
+Luazifier.ImageLabel1.Position = UDim2.new(0.41844692826271057, 0, 0.04678363725543022, 0)
+Luazifier.ImageLabel1.Rotation = 0
+Luazifier.ImageLabel1.Selectable = false
+Luazifier.ImageLabel1.Size = UDim2.new(0, 90, 0, 90)
+Luazifier.ImageLabel1.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Luazifier.ImageLabel1.Visible = true
+Luazifier.ImageLabel1.ZIndex = 1
+Luazifier.ImageLabel1.Archivable = true
+Luazifier.ImageLabel1.ClipsDescendants = false
+Luazifier.ImageLabel1.AutoLocalize = true
+Luazifier.ImageLabel1.Image = "http://www.roblox.com/asset/?id=1403367287"
+Luazifier.ImageLabel1.ImageColor3 = Color3.new(1, 1, 1)
+Luazifier.ImageLabel1.ImageRectOffset = Vector2.new(0, 0)
+Luazifier.ImageLabel1.ImageRectSize = Vector2.new(0, 0)
+Luazifier.ImageLabel1.ImageTransparency = 1
+Luazifier.ImageLabel1.ScaleType = Enum.ScaleType.Stretch
+Luazifier.ImageLabel1.SliceScale = 1
+
+
+-- Scripts:
+
 local getByName = function(N)
 	for i,v in pairs(Luazifier) do
 		if v.Name and v.Name == N then
