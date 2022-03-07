@@ -245,7 +245,6 @@ local Title = Instance.new("TextLabel")
 local MenuPage = Instance.new("Frame")
 local FarmPage = Instance.new("TextButton")
 local Main = Instance.new("TextButton")
-local ShopPage = Instance.new("TextButton")
 local afOnePage = Instance.new("Frame")
 local npcFarmFrame = Instance.new("Frame")
 local npcFarmLine = Instance.new("Frame")
@@ -260,12 +259,6 @@ local atmFarmButton = Instance.new("TextButton")
 local questFarmFrame = Instance.new("Frame")
 local questFarmLine = Instance.new("Frame")
 local questFarmButton = Instance.new("TextButton")
-local shopOnePage = Instance.new("Frame")
-local ToolsPage = Instance.new("TextButton")
-local shopMenu = Instance.new("TextButton")
-local BackPackspage = Instance.new("TextButton")
-local UpgradesPage = Instance.new("TextButton")
-local BluePrintsPage = Instance.new("TextButton")
 --Properties:
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
@@ -400,17 +393,6 @@ Main.TextColor3 = Color3.new(1, 1, 1)
 Main.TextSize = 25
 Main.TextWrapped = true
 
-ShopPage.Name = "ShopPage"
-ShopPage.Parent = MenuPage
-ShopPage.BackgroundColor3 = Color3.new(0.203922, 0.203922, 0.203922)
-ShopPage.Position = UDim2.new(0.660550475, 0, 0.0335371159, 0)
-ShopPage.Size = UDim2.new(0, 134, 0, 48)
-ShopPage.Font = Enum.Font.SourceSans
-ShopPage.Text = "Shop"
-ShopPage.TextColor3 = Color3.new(1, 1, 1)
-ShopPage.TextSize = 25
-ShopPage.TextWrapped = true
-
 afOnePage.Name = "afOnePage"
 afOnePage.Parent = MainFrame
 afOnePage.BackgroundColor3 = Color3.new(0.0313726, 0.0313726, 0.0313726)
@@ -488,110 +470,6 @@ questFarmButton.Text = "Update Quest"
 questFarmButton.TextColor3 = Color3.new(1, 1, 1)
 questFarmButton.TextSize = 14
 questFarmButton.TextWrapped = true
-
-shopOnePage.Name = "shopOnePage"
-shopOnePage.Parent = MainFrame
-shopOnePage.BackgroundColor3 = Color3.new(0.0313726, 0.0313726, 0.0313726)
-shopOnePage.BorderColor3 = Color3.new(0, 0, 0)
-shopOnePage.Position = UDim2.new(0, 0, 0.137387007, 0)
-shopOnePage.Size = UDim2.new(0, 436, 0, 251)
-shopOnePage.Visible = false
-
-ToolsPage.Name = "ToolsPage"
-ToolsPage.Parent = shopOnePage
-ToolsPage.BackgroundColor3 = Color3.new(0.203922, 0.203922, 0.203922)
-ToolsPage.ClipsDescendants = true
-ToolsPage.Position = UDim2.new(0.0275229365, 0, 0.0335371159, 0)
-ToolsPage.Size = UDim2.new(0, 134, 0, 48)
-ToolsPage.Font = Enum.Font.SourceSans
-ToolsPage.Text = "Buy Tools (low to high)"
-ToolsPage.TextColor3 = Color3.new(1, 1, 1)
-ToolsPage.TextScaled = true
-ToolsPage.TextSize = 25
-ToolsPage.TextWrapped = true
-
-shopMenu.Name = "shopMenu"
-shopMenu.Parent = shopOnePage
-shopMenu.BackgroundColor3 = Color3.new(0.203922, 0.203922, 0.203922)
-shopMenu.Position = UDim2.new(0.346330225, 0, 0.746684551, 0)
-shopMenu.Size = UDim2.new(0, 134, 0, 48)
-shopMenu.Font = Enum.Font.SourceSans
-shopMenu.Text = "Menu"
-shopMenu.TextColor3 = Color3.new(1, 1, 1)
-shopMenu.TextSize = 25
-shopMenu.TextWrapped = true
-
-BackPackspage.Name = "BackPackspage"
-BackPackspage.Parent = shopOnePage
-BackPackspage.BackgroundColor3 = Color3.new(0.203922, 0.203922, 0.203922)
-BackPackspage.Position = UDim2.new(0.660550475, 0, 0.0335371159, 0)
-BackPackspage.Size = UDim2.new(0, 134, 0, 48)
-BackPackspage.Font = Enum.Font.SourceSans
-BackPackspage.Text = "Backpacks (low to high)"
-BackPackspage.TextColor3 = Color3.new(1, 1, 1)
-BackPackspage.TextScaled = true
-BackPackspage.TextSize = 25
-BackPackspage.TextWrapped = true
-
-UpgradesPage.Name = "UpgradesPage"
-UpgradesPage.Parent = shopOnePage
-UpgradesPage.BackgroundColor3 = Color3.new(0.203922, 0.203922, 0.203922)
-UpgradesPage.Position = UDim2.new(0.0275229812, 0, 0.324373782, 0)
-UpgradesPage.Size = UDim2.new(0, 134, 0, 48)
-UpgradesPage.Font = Enum.Font.SourceSans
-UpgradesPage.Text = "Upgrades (low to high)"
-UpgradesPage.TextColor3 = Color3.new(1, 1, 1)
-UpgradesPage.TextScaled = true
-UpgradesPage.TextSize = 25
-UpgradesPage.TextWrapped = true
-
-BluePrintsPage.Name = "BluePrintsPage"
-BluePrintsPage.Parent = shopOnePage
-BluePrintsPage.BackgroundColor3 = Color3.new(0.203922, 0.203922, 0.203922)
-BluePrintsPage.Position = UDim2.new(0.660550475, 0, 0.324373782, 0)
-BluePrintsPage.Size = UDim2.new(0, 134, 0, 48)
-BluePrintsPage.Font = Enum.Font.SourceSans
-BluePrintsPage.Text = "Blueprints (low to high)"
-BluePrintsPage.TextColor3 = Color3.new(1, 1, 1)
-BluePrintsPage.TextScaled = true
-BluePrintsPage.TextSize = 25
-BluePrintsPage.TextWrapped = true
--- Scripts:
-
-
-
-MenuButton.MouseButton1Click:Connect(function()
-	MainPage.Visible = false
-	MenuPage.Visible = true
-end)
-
-Main.MouseButton1Click:Connect(function()
-	MenuPage.Visible = false
-	MainPage.Visible = true
-end)
-
-FarmPage.MouseButton1Click:Connect(function()
-	MenuPage.Visible = false
-	afOnePage.Visible = true
-end)
-
-afMenu.MouseButton1Click:Connect(function()
-	afOnePage.Visible = false
-	MenuPage.Visible = true 
-end)
-
-ShopPage.MouseButton1Click:Connect(function()
-	MenuPage.Visible = false
-	shopOnePage.Visible = true
-end)
-
-shopMenu.MouseButton1Click:Connect(function()
-	shopOnePage.Visible = false
-	MenuPage.Visible = true
-end)
-
-
-
 -- stats 
 
 _G.npcFarm = false
@@ -618,110 +496,6 @@ npcFarmButton.MouseButton1Click:connect(function()
 	else
 		npcFarmLine:TweenSize(UDim2.new(0, 0,0, 2), "Out", "Sine", 0.3, true)
 		_G.npcFarm = false
-	end
-end)
-
-sellFarmButton.MouseButton1Click:connect(function()
-	if _G.sellpack == false then
-		sellFarmLine:TweenSize(UDim2.new(1, 0,0, 2), "Out", "Sine", 0.3, true)
-		_G.sellpack = true
-		while _G.sellpack and wait(2) do
-			game:GetService("ReplicatedStorage").FrameworkReplicated.DataStreams:FindFirstChild("RequestSell_Functionv.06"):InvokeServer()
-		end
-	else
-		sellFarmLine:TweenSize(UDim2.new(0, 0,0, 2), "Out", "Sine", 0.3, true)
-		_G.sellpack = false
-	end
-end)
-
-questFarmButton.MouseButton1Click:connect(function()
-	if _G.quest == false then
-		questFarmLine:TweenSize(UDim2.new(1, 0,0, 2), "Out", "Sine", 0.3, true)
-		_G.quest = true
-		while _G.quest and wait(2) do
-			game:GetService("ReplicatedStorage").FrameworkReplicated.DataStreams:FindFirstChild("UpdateQuests_Eventv.06"):FireServer()
-		end
-	else
-		questFarmLine:TweenSize(UDim2.new(0, 0,0, 2), "Out", "Sine", 0.3, true)
-		_G.quest = false
-	end
-end)
-
-ToolsPage.MouseButton1Click:connect(function()
-	local Table = {
-		"Crowbar",
-		"Lockpick",
-		"Hammer",
-		"Hacking Device",
-		"Dynamite",
-		"Thermite"
-	}
-
-	for i, v in pairs(Table) do
-		local args = {
-			[1] = "Tool",
-			[2] = v
-		}
-		game:GetService("ReplicatedStorage").FrameworkReplicated.DataStreams:FindFirstChild("RequestPurchase_Functionv.06"):InvokeServer(unpack(args))
-	end
-end)
-
-BackPackspage.MouseButton1Click:connect(function()
-	local Table = {
-		"Bag",
-		"Basic Bag",
-		"Briefcase",
-		"Duffel Bag",
-		"Laptop Bag",
-		"Large Backpack",
-		"Office Bag",
-		"Sports Bag",
-		"Hiking Bag",
-		"Suitcase",
-		"Gym Bag"
-	}
-
-	for i, v in pairs(Table) do
-		local args = {
-			[1] = "Backpack",
-			[2] = v
-		}
-		game:GetService("ReplicatedStorage").FrameworkReplicated.DataStreams:FindFirstChild("RequestPurchase_Functionv.06"):InvokeServer(unpack(args))
-	end
-end)
-
-UpgradesPage.MouseButton1Click:connect(function()
-		local Table = {
-			"Stealth",
-			"Swipe Speed",
-			"Intimidation",
-			"Sprint Speed",
-			"Strength"
-		}
-
-		for i, v in pairs(Table) do
-		local args = {
-			[1] = v
-		}
-		game:GetService("ReplicatedStorage").FrameworkReplicated.DataStreams:FindFirstChild("UpgradeStats_Functionv.06"):InvokeServer(unpack(args))
-	end
-end)
-
-BluePrintsPage.MouseButton1Click:connect(function()
-	local Table = {
-		"Zone 2 Blueprint",
-		"Zone 3 Blueprint",
-		"Betting Store Blueprint",
-		"Tech Store Blueprint",
-		"Jewelry Store Blueprint",
-		"Bank Blueprint"
-	}
-	for i, v in pairs(Table) do
-		local args = {
-			[1] = "Blueprint",
-			[2] = v
-		}
-		game:GetService("ReplicatedStorage").FrameworkReplicated.DataStreams:FindFirstChild("RequestPurchase_Functionv.06"):InvokeServer(unpack(args))
 	end
 end)
 
