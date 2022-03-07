@@ -254,9 +254,6 @@ local afMenu = Instance.new("TextButton")
 local sellFarmFrame = Instance.new("Frame")
 local sellFarmLine = Instance.new("Frame")
 local sellFarmButton = Instance.new("TextButton")
-local atmFarmFrame = Instance.new("Frame")
-local atmFarmLine = Instance.new("Frame")
-local atmFarmButton = Instance.new("TextButton")
 local questFarmFrame = Instance.new("Frame")
 local questFarmLine = Instance.new("Frame")
 local questFarmButton = Instance.new("TextButton")
@@ -488,36 +485,6 @@ sellFarmButton.Text = "Sell Backpack"
 sellFarmButton.TextColor3 = Color3.new(1, 1, 1)
 sellFarmButton.TextSize = 14
 sellFarmButton.TextWrapped = true
-
-atmFarmFrame.Name = "atmFarmFrame"
-atmFarmFrame.Parent = afOnePage
-atmFarmFrame.BackgroundColor3 = Color3.new(0.203922, 0.203922, 0.203922)
-atmFarmFrame.BorderColor3 = Color3.new(0, 0, 0)
-atmFarmFrame.Position = UDim2.new(0, 19, 0, 75)
-atmFarmFrame.Size = UDim2.new(0, 140, 0, 42)
-
-atmFarmLine.Name = "atmFarmLine"
-atmFarmLine.Parent = atmFarmFrame
-atmFarmLine.AnchorPoint = Vector2.new(0.5, 0)
-atmFarmLine.BackgroundColor3 = Color3.new(0.333333, 1, 0.498039)
-atmFarmLine.BorderColor3 = Color3.new(0, 0, 0)
-atmFarmLine.BorderSizePixel = 0
-atmFarmLine.Position = UDim2.new(0.5, 0, 0.850000024, 0)
-atmFarmLine.Size = UDim2.new(0, 0, 0, 2)
-
-atmFarmButton.Name = "atmFarmButton"
-atmFarmButton.Parent = atmFarmFrame
-atmFarmButton.BackgroundColor3 = Color3.new(0.203922, 0.203922, 0.203922)
-atmFarmButton.BackgroundTransparency = 1
-atmFarmButton.BorderColor3 = Color3.new(0, 0, 0)
-atmFarmButton.BorderSizePixel = 0
-atmFarmButton.Position = UDim2.new(-2.98023224e-08, 0, 0, 0)
-atmFarmButton.Size = UDim2.new(0, 140, 0, 42)
-atmFarmButton.Font = Enum.Font.GothamSemibold
-atmFarmButton.Text = "Farm ATM's"
-atmFarmButton.TextColor3 = Color3.new(1, 1, 1)
-atmFarmButton.TextSize = 14
-atmFarmButton.TextWrapped = true
 
 questFarmFrame.Name = "questFarmFrame"
 questFarmFrame.Parent = afOnePage
