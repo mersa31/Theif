@@ -297,7 +297,7 @@ versionLabel.BorderSizePixel = 0
 versionLabel.Position = UDim2.new(-0.395522386, 0, 0.0530863404, 0)
 versionLabel.Size = UDim2.new(0, 239, 0, 36)
 versionLabel.Font = Enum.Font.GothamSemibold
-versionLabel.Text = "Theif Sim"
+versionLabel.Text = "V1"
 versionLabel.TextColor3 = Color3.new(1, 1, 1)
 versionLabel.TextSize = 14
 
