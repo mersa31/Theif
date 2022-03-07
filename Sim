@@ -459,36 +459,6 @@ afMenu.TextColor3 = Color3.new(1, 1, 1)
 afMenu.TextSize = 25
 afMenu.TextWrapped = true
 
-sellFarmFrame.Name = "sellFarmFrame"
-sellFarmFrame.Parent = afOnePage
-sellFarmFrame.BackgroundColor3 = Color3.new(0.203922, 0.203922, 0.203922)
-sellFarmFrame.BorderColor3 = Color3.new(0, 0, 0)
-sellFarmFrame.Position = UDim2.new(0, 281, 0, 16)
-sellFarmFrame.Size = UDim2.new(0, 140, 0, 42)
-
-sellFarmLine.Name = "sellFarmLine"
-sellFarmLine.Parent = sellFarmFrame
-sellFarmLine.AnchorPoint = Vector2.new(0.5, 0)
-sellFarmLine.BackgroundColor3 = Color3.new(0.333333, 1, 0.498039)
-sellFarmLine.BorderColor3 = Color3.new(0, 0, 0)
-sellFarmLine.BorderSizePixel = 0
-sellFarmLine.Position = UDim2.new(0.5, 0, 0.850000024, 0)
-sellFarmLine.Size = UDim2.new(0, 0, 0, 2)
-
-sellFarmButton.Name = "sellFarmButton"
-sellFarmButton.Parent = sellFarmFrame
-sellFarmButton.BackgroundColor3 = Color3.new(0.203922, 0.203922, 0.203922)
-sellFarmButton.BackgroundTransparency = 1
-sellFarmButton.BorderColor3 = Color3.new(0, 0, 0)
-sellFarmButton.BorderSizePixel = 0
-sellFarmButton.Position = UDim2.new(0.0357142687, 0, 0, 0)
-sellFarmButton.Size = UDim2.new(0, 140, 0, 42)
-sellFarmButton.Font = Enum.Font.GothamSemibold
-sellFarmButton.Text = "Sell Backpack"
-sellFarmButton.TextColor3 = Color3.new(1, 1, 1)
-sellFarmButton.TextSize = 14
-sellFarmButton.TextWrapped = true
-
 questFarmFrame.Name = "questFarmFrame"
 questFarmFrame.Parent = afOnePage
 questFarmFrame.BackgroundColor3 = Color3.new(0.203922, 0.203922, 0.203922)
